@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Welcome to Coding Events</h1>
-    <a th:href="@{/events}">View Events</a>
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+
+
+    <div class="container">
+        <!-- Main Heading -->
+        <h1>Welcome to <span>LaunchCode Events</span> 🎉</h1>
+        <nav th:replace="fragments :: navigation"></nav>
+        <br>
+        <p><strong>Discover, Plan, and Enjoy Amazing Events Near You!</strong></p>
+
+        <p>At <strong>LaunchCode Events</strong>, we make it easy to find the best local events, connect with others, and create unforgettable experiences. Whether you're looking for concerts, festivals, workshops, or social gatherings, we’ve got you covered!</p>
+
+        <!-- Explore Events Section -->
+        <h2>Explore Thousands of Events 🌟</h2>
+        <ul>
+            <li>Stay up to date with the latest happenings in your city.</li>
+            <li>Find events based on your interests—music, art, sports, tech, and more.</li>
+            <li>Get personalized recommendations straight to your inbox.</li>
+        </ul>
+
+        <!-- Host Events Section -->
+        <h2>Host and Promote Your Event 📅</h2>
+        <p>Are you an event organizer? We’ve built tools to help you create, promote, and manage your events all in one place:</p>
+        <ul>
+            <li>Set up an event page in minutes.</li>
+            <li>Reach a wide audience with our promotional tools.</li>
+            <li>Track ticket sales and attendance with real-time analytics.</li>
+        </ul>
+
+        <!-- Community Section -->
+        <h2>Join Our Community 🤝</h2>
+        <p>Connect with people who share your passions! Whether you're attending an event or hosting one, our platform helps bring people together for shared experiences:</p>
+        <ul>
+            <li>Discover new friends and groups with similar interests.</li>
+            <li>Chat, network, and share your favorite events.</li>
+            <li>Leave reviews and feedback to help others find the best experiences.</li>
+        </ul>
+
+        <!-- Call to Action Section -->
+        <h2>Get Started Now 🚀</h2>
+        <p>Don’t miss out on the action! Sign up today to find your next event or start planning one. With <strong>[Your Website Name]</strong>, every moment is an opportunity to explore, connect, and create lasting memories.</p>
+
+        <!-- Closing Line -->
+        <p><strong>Join the fun. Find your next event today!</strong></p>
+    </div>
+
 </body>
 </html>
