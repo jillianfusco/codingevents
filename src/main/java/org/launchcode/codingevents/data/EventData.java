@@ -23,11 +23,16 @@ public class EventData {
 
     //add an event
     public static void add(Event event) {
-        events.put(event.getID(), event);
+        events.put(event.getId(), event);
     }
 
     //remove an event
     public static void remove(int id) {
         events.remove(id);
     }
+
+    public static Event getById(int eventId) {
+        return events.get(eventId);  // Return the Event object
+    }
+
 }

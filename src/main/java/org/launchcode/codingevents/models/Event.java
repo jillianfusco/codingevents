@@ -55,7 +55,4 @@ public class Event {
         return Objects.hashCode(id);
     }
 
-    public Integer getID() {
-        return id;
-    }
 }
